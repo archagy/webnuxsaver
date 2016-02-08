@@ -13,6 +13,18 @@ Access in
 
 and clone the project, you need use sudo or root.
 
+in the folder videos add all the videos as you want. 
+run getArrayVideos.py inside of the videos folder to get all the array of videos.
+
+1)
+> cd videos
+
+2)
+> python getArrayVideos.py
+
+Copy the output and in index.html add the array of videos.
+
+
 ### Ubuntu
 
 Install xscreensaver
@@ -21,3 +33,14 @@ Install xscreensaver
 and install webscreensaver.
 
 > [instructions](https://github.com/lmartinking/webscreensaver)
+
+in the folder videos add all the videos as you want. 
+run getArrayVideos.py inside of the videos folder to get all the array of videos.
+
+1)
+> cd videos 
+
+2)
+> python getArrayVideos.py
+
+Copy the output and in index.html add the array of videos.
