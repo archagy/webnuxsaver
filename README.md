@@ -22,7 +22,11 @@ run getArrayVideos.py inside of the videos folder to get all the array of videos
 2)
 > python getArrayVideos.py
 
-Copy the output and in index.html add the array of videos.
+Copy the output and add in index.html  the array of videos in *videosStorage* variable.
+
+
+
+**Important note: in metadata.json the uuid value  must be  equal to the name folder.**
 
 
 ### Ubuntu
@@ -43,4 +47,4 @@ run getArrayVideos.py inside of the videos folder to get all the array of videos
 2)
 > python getArrayVideos.py
 
-Copy the output and in index.html add the array of videos.
+Copy the output and add in index.html  the array of videos in *videosStorage* variable.
