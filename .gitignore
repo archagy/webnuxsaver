@@ -1,2 +1,3 @@
 #ignore path of videos
-videos/
+videos/*.mp4
+videos/*.webm
