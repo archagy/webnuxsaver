@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+   function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+
+function player(){
+  var videoPlayer = document.getElementById('videoPlayer');
+  var videoStorage = ['Azir, the Emperor of the Sands - Login Screen-smNA_BYDODU.webm', 'Zac, the Secret Weapon - Login Screen-AW2JL512dXs.webm', 'World Championship 2014 - Login Screen-4WqA61C_PDo.webm', 'Lucian, the Purifier - Login Screen-qbMCmdSEoaA.webm', 'Thresh, the Chain Warden - Login Screen-6WyH5E8Xs0c.webm', "Vel'Koz, the Eye of the Void - Login Screen-s7PafA8mrmI.webm", 'Harrowing 2014 - Login Screen-tm29vB0THXM.webm', '2016 Season - Login Screen-lu0fUb0PGh4.webm', 'Snowdown Showdown 2013 - Login Screen-yX4TlL_egts.webm', 'Pool Party - Login Screen-lVrMJepoj6A.webm', 'League of Legends Season 2014 - Login Screen-lT-DJOqn-5Y.webm', 'Shurima - Login Screen-XHMFp84xo64.webm', 'Elise, The Spider Queen - Login Screen-skD_I-SHk30.webm', 'Yasuo, the Unforgiven - Login Screen-jfgKdOlO_E4.webm', 'Gnar, the Missing Link - Login Screen-Awa7fpGmtf0.webm', 'Tahm Kench, the River King - Login Screen-lr4EqywQGTQ.webm', 'Poppy, Keeper of the Hammer - Login Screen-yB1rg7cAI1M.webm', 'Rengar, the Pridestalker - Login Screen-0axsibJhIco.webm', 'Panda Annie - Login Screen-drACMJveGMA.webm', 'Ekko, the Boy Who Shattered Time - Login Screen-8_OSWJeVTg0.webm', 'Diana, Scorn of the Moon - Login Screen-ay_o-BGVhL4.webm', 'League of Legends Music - Welcome to Planet Urf-qYIiy03eGE0.webm', 'Slayer Jinx - Login Screen-XHEu4IYXuJk.webm', 'Kindred, the Eternal Hunters - Login Screen-aB_DbCpFvHA.webm', 'Super Galaxy Rumble - Login Screen-G6JAQD0FmDg.webm', 'Infernal Nasus - Login Screen-LHWVpb5lQ0Y.webm', "Kha'Zix, the Voidreaver - Login Screen-27CRdopEhNM.webm", 'Lunar Revel 2014 - Login Screen-h-6wHfudAPQ.webm', 'Dj Sona Kinetic - Login Screen-AwlA2e_tFjc.webm', 'Spirit Guard Udyr - Login Screen-DGT20ihvGDU.webm', "Rek'Sai, the Void Burrower - Login Screen-zXXdL4rHvww.webm", 'Allstar Paris 2014 - Login Screen-7DpkziljhZE.webm', 'All-Star Shanghai 2013 - Login Screen-NXQdgK1VPMA.webm', 'Dragon Trainer Tristana - Login Screen-EiobsNAKqHU.webm', 'PROJECT - MASTER YI - Login Screen-YjrL3WjaSN0.webm', 'Bard, the Wandering Caretaker - Login Screen-MWHmgob5FDA.webm', 'Forecast Janna - Login Screen-UbvSfKby2uY.webm', 'Vi, the Piltover Enforcer - Login Screen-18yK0G9hHts.webm', 'Eternum Nocturne - Login Screen-rgbKA01lSS8.webm', 'Zed, the Master of Shadows - Login Screen-8kr6J2I-0qk.webm', 'Pulsefire Ezreal - Login Screen-TK72r5NTDnQ.webm', 'Gangplank, the Saltwater Scourge - Login Screen-shIMVeI5IPE.webm', 'Varus, the Arrow of Retribution - Login Screen-J4ZE-lFqf4w.webm', 'LCS 2015 Season - Login Screen-mUeloo_Qvrk.webm', 'Captain Fortune - Login Screen-vdNHYCUjDCk.webm', 'League of Legends Music - Bit Rush-BO3XLE_eRPk.webm', 'Season 3 World Championship - Login Screen-UY3TexiTK_c.webm', 'Jinx, the Loose Cannon - Login Screen-JoHRzfKrdtk.webm', 'Kalista, the Spear of Vengeance - Login Screen-DFZJuBXufIM.webm', 'Sion, The Undead Juggernaut - Login Screen-vZ9nyZTvRwY.webm', "Quinn, Demacia's Wings - Login Screen-gZ61j3SxQPA.webm", 'Darius, the Hand of Noxus - Login Screen-upgwV0pIpXY.webm', 'DJ Sona Concussive - Login Screen-goHHknZJaIY.webm', 'Zyra, Rise of the Thorns - Login Screen-4ajAZG6FGWM.webm', 'Gangplank, the Saltwater Scourge - Login Screen-eWmmpo5OsC8.webm', 'Dj Sona Ethereal - Login Screen-GOgFsAejQ0o.webm', 'Syndra, the Dark Sovereign - Login Screen-k73RLHTjn8A.webm', 'Braum, the Heart of the Freljord - Login Screen-F8cPDpXnQa0.webm', 'Omega Squad Teemo - Login Screen-OXHx3up9nHo.webm', 'Nami, the Tidecaller - Login Screen-WN5OA1Qv1N4.webm', "Summoner's Rift - Login Screen-ZM3mmUAqyA4.webm", 'Haunted Zyra - Login Screen-B91NcKEQAMU.webm', 'Draven, the Glorious Executioner - Login Screen-H1xHayXetLU.webm', 'Firecracker Jinx - Login Screen-jkWXBxaJh-g.webm', 'Jayce, the Defender of Tomorrow - Login Screen-OcIE8UQKXdQ.webm', 'Lissandra, the Ice Witch - Login Screen-gLuVXfZoOAk.webm', 'Season 3 Finals - Login Screen-vd66qPdq5Vg.webm', 'Gatekeeper Galio - Login Screen-1Tnx6eNCH7Q.webm', 'Dark Candy Fiddlesticks - Login Screen-3-Gfn2a6tBM.webm', 'World Championship 2015 - Login Screen-O3u6M8j0e5M.webm', "Battlecast Prime Cho'Gath - Login Screen-09IKI8utQ3g.webm", 'Hecarim, the Shadow of War - Login Screen-83s03_rSjRs.webm', 'Aether Wing Kayle - Login Screen-bHGANyPJjYc.webm', 'Aatrox, the Darkin Blade - Login Screen-vsHsGLYR4WM.webm', 'Illaoi, the Kraken Priestess - Login Screen-ZLhDBm2YtsU.webm', 'Legends of the Field - Login Screen-LsjIDZXR-rs.webm'],
+    video = document.querySelector('video'),
+    // choose one random url from our storage as the active video
+    activeVideoUrl = videoStorage[Math.round(Math.random() * (videoStorage.length - 1))];        
+
+// check which file extension your browser can play and set the video source accordingly
+    video.setAttribute('src', "videos/"+activeVideoUrl);
+    v = setTimeout(function () {
+        player()
+    }, 20000);
+
+}
+
+ 
+
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    // add a zero in front of numbers<10
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+    t = setTimeout(function () {
+        startTime()
+    }, 500);
+}
+    </script>
+
+    <style>
+    .container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+  #time{
+    font-size: 80px;
+    color: white;
+    margin-top: 80%;
+    margin-left: 50px;
+  }
+    </style>
+  </head>
+  <body bgcolor="black" onload="startTime(); player();" style="overflow: hidden">
+<video width="100%" height="100%" autoplay muted id="videoPlayer">
+    <source src="videos/Poppy, Keeper of the Hammer - Login Screen-yB1rg7cAI1M.webm " type='video/webm'>
+</video>
+
+  <div class="overlay">
+   <div id="time"></div>
+  <div>
+
+  </body>
+</html>
