@@ -15,7 +15,7 @@ and install webscreensaver.
 
 > [instructions here](https://github.com/lmartinking/webscreensaver)
 
-clone this project wherever you want and add mp4/webm format in folder videos.
+clone webnuxsaver project wherever you want and add mp4/webm format in folder videos.
 run getArrayVideos.py inside of the videos folder to get all the array of videos.
 
 > cd videos 
@@ -44,6 +44,7 @@ in command line add:
 > webscreensaver -url "file:///usr/lib/xscreensaver/webnuxsaver/index.html"
 
 Note: is the url of local file of the index.html. Open your browser to get the path.
+
 Extra note: Try to use simple name of the videos without special characters.
 
 
