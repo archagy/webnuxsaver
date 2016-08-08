@@ -43,5 +43,20 @@ Open xscreensaver and search for webscreensaver then click in settings then adva
 in command line add:
 > webscreensaver -url "file:///usr/lib/xscreensaver/webnuxsaver/index.html"
 
-Note: is the url of localfile of the index.html. Open your browser to get the path.
+Note: is the url of local file of the index.html. Open your browser to get the path.
 Extra note: Try to use simple name of the videos without special characters.
+
+
+Finally to start with xscreensaver as default.
+Follow the next steps:
+
+
+    1) xscreensaver needs to be launched at startup via "Startup Applications" (hit Super and type "Startup"). Add a new entry to launch the xscreensaver daemon on startup as xscreensaver -no-splash.
+
+    2)You need to bring up the xscreensaver config app. Hit Super and type screensaver. Set the "Blank after x minutes" to your desired amount (e.g. 5 minutes). Remember this value for later. Ensure "Lock screen after" is UNCHECKED.
+
+    3)Finally, go to System Settings / Brightness & Lock. Set "Turn screen off when inactive for x minutes" to the same value as you set xscreensavers "Blank after x minutes" setting (e.g. 5 minutes). Then still under Brightness & Lock, set "Lock screen after:" to "Screen turns off".
+
+And you're done! If your system is idle for the set amount of time, the screensaver will kick in, and in the background your session will also lock. When you wake your system, you will find it locked and asking for your password. No ugly 90's login prompts... awesome. The one caveat is that your screensaver will apparently not kick in if your session is already at a login prompt, the screen will simply turn off.
+
+more info: http://askubuntu.com/questions/491516/how-do-i-configure-xscreensaver-to-use-the-gnome-lockscreen-on-ubuntu-14-04
