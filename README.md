@@ -57,6 +57,10 @@ Follow the next steps:
 
     3)Finally, go to System Settings / Brightness & Lock. Set "Turn screen off when inactive for x minutes" to the same value as you set xscreensavers "Blank after x minutes" setting (e.g. 5 minutes). Then still under Brightness & Lock, set "Lock screen after:" to "Screen turns off".
 
-And you're done! If your system is idle for the set amount of time, the screensaver will kick in, and in the background your session will also lock. When you wake your system, you will find it locked and asking for your password. No ugly 90's login prompts... awesome. The one caveat is that your screensaver will apparently not kick in if your session is already at a login prompt, the screen will simply turn off.
+Or in shortcuts keyboard add the next command:
+
+> xscreensaver-command -lock 
+
+with the shortcut you prefer. Ex. Ctrl+alt+l
 
 more info: http://askubuntu.com/questions/491516/how-do-i-configure-xscreensaver-to-use-the-gnome-lockscreen-on-ubuntu-14-04
